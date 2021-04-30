@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="background.css">
+	<title>Record New Rental</title>
+</head>
+<body>
+		<a href="Administer.php">Administer &nbsp;</a><br>
+	<a href="Welcome.php">Back</a>
+	<h1>Record New Rental</h1>
+	<form action="NewRental.php" method="post">
+		<table border="1">
+			<tr>
+				<th>Enter the Inventory ID:</th>
+				<th><input type="text" name="Inventory"></th>
+			</tr>
+			<tr>
+				<th>Enter the Customer ID:</th>
+				<th><input type="text" name="Customer"></th>
+			</tr>
+			<tr>
+				<th>Enter the Staff ID:</th>
+				<th><input type="text" name="Staff"></th>
+			</tr>
+			<tr>
+				<th>Returned:</th>
+				<th><input type="radio" name="Return" value="1"></th>
+			</tr>
+			<tr>
+				<th>Unreturned:</th>
+				<th><input type="radio" name="Return" value="0"></th>
+			</tr>
+			<tr>
+				<th><input type="submit" name="update"></th>
+			</tr>
+		</table>
+	</form>
+</body>
+</html>

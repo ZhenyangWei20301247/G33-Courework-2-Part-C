@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="background.css">
+	<title>New Payment</title>
+</head>
+<body>
+	<a href="Administer.php">Administer &nbsp;</a><br>
+	<a href="Welcome.php">Back</a>
+	<h1>Make new Payment</h1>
+	<form action="NewPayment.php" method="post">
+		<table>
+			<tr>
+				<th>Enter the Customer ID:</th>
+				<th><input type="text" name="customer"></th>
+			</tr>
+			<tr>
+				<th>Enter the Staff ID:</th>
+				<th><input type="text" name="staff"></th>
+			</tr>
+			<tr>
+				<th>Enter the Rental ID:</th>
+				<th><input type="text" name="rental"></th>
+				<th>No Rental Yet:</th>
+				<th><input type="radio" name="noRental" value="1"></th>
+			</tr>
+			<tr>
+				<th>Enter the Amount:</th>
+				<th><input type="text" name="amount"></th>
+			</tr>
+			<tr>
+				<th><input type="submit" name="update"></th>
+			</tr>
+	</form>
+</body>
+</html>

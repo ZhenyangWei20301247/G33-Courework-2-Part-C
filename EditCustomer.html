@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="background.css">
+	<title>Edit a Customer</title>
+</head>
+<body>
+
+	<h1 style="align-content: :center">Edit A customer Information by ID</h1><br>
+
+	<form action="NewCustomer.php" method="post">
+		<table>
+			<tr>
+				<th style="color:red;">Which Customer ID you want to edit?</th>
+				<th><input type="text" name="customerID"></th>
+			</tr>
+			<tr>
+				<th style="color:red;">Write the update informations*:</th>
+			</tr>
+			<tr>
+				<th>Store_ID: </th><th><input type="text" name="storeID"></th>
+			</tr>
+			<tr>
+				<th>First Name: </th><th><input type="text" name="fname"></th>
+			</tr>
+			<tr>
+				<th>Last Name: </th><th><input type="text" name="lname"></th>
+			</tr>
+			<tr>
+				<th>Email: </th><th><input type="text" name="email"></th>
+			</tr>
+			<tr>
+				<th>Address_ID: </th><th><input type="text" name="addressID"></th>
+			</tr>
+			<tr>
+				<th>Acitive:   </th>
+				<td>Yes<input type="radio" name="active" value="1" checked></td>
+				<td>No<input type="radio" name="active" value="0"></td>
+			</tr>
+			<th style="color:red;">*Please fill all information</th>
+			<tr>
+				<td><input type="submit" name="Add"></td>
+			</tr>
+		</table>
+	</form>
+
+	<a href="Administer.php">Back</a>
+
+</body>
+</html>
